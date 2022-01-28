@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import { wallet } from '../services/near';
 import { useState, useCallback, useEffect } from 'react';
 import {

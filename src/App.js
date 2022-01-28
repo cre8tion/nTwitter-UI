@@ -12,7 +12,9 @@ function App() {
   const [accountId, setAccountId] = useState(wallet.getAccountId() ?? '');
   const {
     owner,
+    // eslint-disable-next-line
     accounts,
+    // eslint-disable-next-line
     tweets,
     recentTweets,
     hasUserAccount,
