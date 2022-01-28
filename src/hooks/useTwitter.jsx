@@ -58,6 +58,7 @@ export const useTwitter = ({ contractId, accountId, setApiError }) => {
     hasUserAccount: handleHasUserAccount,
     createAccount: handleCreateAccount,
     createTweet: handleCreateTweet,
-    updateValues
+    updateValues,
+    getTweets
   };
 };
