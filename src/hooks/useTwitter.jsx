@@ -39,15 +39,15 @@ export const useTwitter = ({ contractId, accountId, setApiError }) => {
   }, [updateValues]);
 
   const handleCreateAccount = async () => {
-    await createAccount();
+    return await createAccount();
   };
 
   const handleCreateTweet = async (message) => {
-    createTweet(message);
+    return createTweet(message);
   };
 
   const handleHasUserAccount = async (accountId) => {
-    hasUserAccount(accountId)
+    return await hasUserAccount(accountId);
   }
 
   return {
@@ -58,5 +58,6 @@ export const useTwitter = ({ contractId, accountId, setApiError }) => {
     hasUserAccount: handleHasUserAccount,
     createAccount: handleCreateAccount,
     createTweet: handleCreateTweet,
+    updateValues
   };
 };
